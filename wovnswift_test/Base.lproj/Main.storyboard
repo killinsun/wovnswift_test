@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ry-Po-bIG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainView" id="BYZ-38-t0r" customClass="ViewController" customModule="wovnswift_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnGoWebView" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJI-nc-J60">
+                                <rect key="frame" x="0.0" y="790" width="414" height="30"/>
+                                <state key="normal" title="Go to web view"/>
+                                <connections>
+                                    <action selector="goWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wvw-51-s7q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIF-8Q-vcc">
+                                <rect key="frame" x="0.0" y="111" width="414" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WBq-N5-By7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="mainView" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d7N-jc-9fY">
+                                <rect key="frame" x="0.0" y="182" width="414" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Once upon a time,
+Cinderella had a step-mother and two step-sisters move into her house.
+Each of them was cruel, and every day they did mean things to Cinderella.
+
+One day, an invitation to a ball was delivered.
+“You have to stay home!” 
+said her step-mother and step-sisters as they left.
+
+As Cinderella was left crying, her Fairy Godmother appeared
+and said, “I am going to help you.”
+With a sparkle of her magic wand
+
+a beautiful dress and a pumpkin carriage appeared!
+“This magic will only last until midnight,” said the Fairy Godmother,
+
+lastly giving her a pair of glass slippers.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VpI-sI-qDK">
+                                <rect key="frame" x="347" y="705" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleLangSw:" destination="BYZ-38-t0r" eventType="valueChanged" id="dcz-z4-Mhx"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change lang to JP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-EN-0aL">
+                                <rect key="frame" x="0.0" y="705" width="339" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d7N-jc-9fY" firstAttribute="top" secondItem="JIF-8Q-vcc" secondAttribute="bottom" constant="23" id="3LX-dv-xis"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VpI-sI-qDK" secondAttribute="trailing" constant="18" id="ACP-za-tub"/>
+                            <constraint firstItem="x4y-EN-0aL" firstAttribute="top" secondItem="VpI-sI-qDK" secondAttribute="top" id="B4D-hh-9af"/>
+                            <constraint firstItem="d7N-jc-9fY" firstAttribute="leading" secondItem="x4y-EN-0aL" secondAttribute="leading" id="MFg-gL-Lir"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jJI-nc-J60" secondAttribute="bottom" constant="42" id="WMo-BH-3Oy"/>
+                            <constraint firstItem="JIF-8Q-vcc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="WnA-Be-sjw"/>
+                            <constraint firstItem="JIF-8Q-vcc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b0a-Xh-hPQ"/>
+                            <constraint firstItem="x4y-EN-0aL" firstAttribute="leading" secondItem="jJI-nc-J60" secondAttribute="leading" id="cw5-Kj-dbf"/>
+                            <constraint firstItem="x4y-EN-0aL" firstAttribute="bottom" secondItem="VpI-sI-qDK" secondAttribute="bottom" id="hpy-69-LkZ"/>
+                            <constraint firstItem="d7N-jc-9fY" firstAttribute="trailing" secondItem="jJI-nc-J60" secondAttribute="trailing" id="ipx-2P-Cg3"/>
+                            <constraint firstAttribute="trailing" secondItem="JIF-8Q-vcc" secondAttribute="trailing" id="kOJ-Da-LY9"/>
+                            <constraint firstItem="JIF-8Q-vcc" firstAttribute="leading" secondItem="d7N-jc-9fY" secondAttribute="leading" id="nCJ-Q1-Cdo"/>
+                            <constraint firstItem="x4y-EN-0aL" firstAttribute="top" secondItem="d7N-jc-9fY" secondAttribute="bottom" constant="56" id="oSD-NM-37H"/>
+                            <constraint firstItem="jJI-nc-J60" firstAttribute="top" secondItem="x4y-EN-0aL" secondAttribute="bottom" constant="54" id="rvQ-n4-6Jy"/>
+                            <constraint firstItem="VpI-sI-qDK" firstAttribute="leading" secondItem="x4y-EN-0aL" secondAttribute="trailing" constant="8" symbolic="YES" id="ts4-xk-VdM"/>
+                            <constraint firstItem="JIF-8Q-vcc" firstAttribute="trailing" secondItem="d7N-jc-9fY" secondAttribute="trailing" id="zyB-Wr-3hh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QVB-Tt-sJ7"/>
+                    <connections>
+                        <outlet property="langSwitch" destination="VpI-sI-qDK" id="yzQ-wb-Wcm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8695652173915" y="138.61607142857142"/>
+        </scene>
+        <!--Webkit View Controller-->
+        <scene sceneID="9ur-Q4-8Zt">
+            <objects>
+                <viewController storyboardIdentifier="webkitView" id="heh-P4-qk4" customClass="WebkitViewController" customModule="wovnswift_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YUe-jm-8dE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="webkit" translatesAutoresizingMaskIntoConstraints="NO" id="dZJ-mu-YWJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dZJ-mu-YWJ" firstAttribute="centerY" secondItem="YUe-jm-8dE" secondAttribute="centerY" id="RUe-LL-J0Q"/>
+                            <constraint firstItem="dZJ-mu-YWJ" firstAttribute="centerX" secondItem="YUe-jm-8dE" secondAttribute="centerX" id="mSg-Z0-4Jh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vBy-Ce-lki"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="35i-wM-xJt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IjN-S4-H0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2754" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xbp-4t-5I8">
+            <objects>
+                <navigationController storyboardIdentifier="TopNavigationBar" automaticallyAdjustsScrollViewInsets="NO" id="2ry-Po-bIG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0nc-rO-Xhm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VMD-9n-OVV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="As2-eI-2xJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
